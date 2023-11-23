@@ -1,0 +1,62 @@
+/* Pengaturan gaya teks untuk judul h1 dan h2 */
+h1, h2 {
+    font-size: 60px; /* Ukuran font */
+    text-align: center; /* Posisi teks di tengah */
+    font-family: arial; /* Jenis font */
+    margin: 10px; /* Ruang luar */
+}
+
+/* Pengaturan gaya tombol */
+button {
+    display: block; /* Menjadikan tombol sebagai blok */
+    margin: auto; /* Posisi tombol di tengah */
+}
+
+/* Pengaturan kontainer */
+.container {
+    width: 600px; /* Lebar kontainer */
+    margin: auto; /* Posisi kontainer di tengah */
+    cursor: url(../img/palu.png), auto; /* Ganti kursor mouse */
+}
+
+/* Pengaturan ketika kontainer dalam keadaan aktif */
+.container:active {
+    cursor: url(../img/palu1.png), auto; /* Ganti kursor mouse ketika kontainer di-klik */
+}
+
+/* Pengaturan blok tanah */
+.tanah {
+    width: 200px; /* Lebar tanah */
+    height: 200px; /* Tinggi tanah */
+    position: relative; /* Penempatan relatif */
+    overflow: hidden; /* Konten yang melebihi ukuran akan tersembunyi */
+    float: left; /* Meletakkan elemen di sebelah kiri */
+}
+
+/* Menambahkan gambar di bagian bawah tanah */
+.tanah::after {
+    content: ''; /* Konten tambahan setelah elemen */
+    display: block; /* Menjadikan elemen sebagai blok */
+    width: 200px; /* Lebar elemen tambahan */
+    height: 100px; /* Tinggi elemen tambahan */
+    background: url(../img/gedung_dpr-removebg-preview.png) bottom center no-repeat; /* Gambar latar belakang */
+    background-size: 70%; /* Ukuran gambar latar belakang */
+    position: absolute; /* Posisi absolut */
+    bottom: -25px; /* Jarak dari bawah */
+}
+
+/* Pengaturan tikus */
+.tikus {
+    width: 100%; /* Lebar elemen */
+    height: 100%; /* Tinggi elemen */
+    background: url(../img/Koruptor_SYL-removebg-preview.png) bottom center no-repeat; /* Gambar latar belakang */
+    background-size: 60%; /* Ukuran gambar latar belakang */
+    position: absolute; /* Posisi absolut */
+    top: 100px; /* Jarak dari atas */
+    transition: top 0.3s; /* Transisi animasi untuk properti top */
+}
+
+/* Pengaturan untuk munculnya tikus saat tanah dalam keadaan muncul */
+.tanah.muncul .tikus {
+    top: -15px; /* Menggeser posisi tikus ke atas saat tanah muncul */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setel pengkodean karakter ke UTF-8 untuk mendukung karakter internasional -->
+    <meta charset="UTF-8">
+    <!-- Konfigurasi tampilan halaman agar responsif sesuai dengan lebar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>PUKUL TIKUS BERDASI</title>
+    <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Heading utama dalam halaman -->
+    <h1>Pukul Tikus BERDASI</h1>
+
+    <!-- Tombol untuk memulai permainan, dipanggil fungsi 'mulai()' saat diklik -->
+    <button type="button" class="mulai" onclick="mulai()">Mulai!</button>
+
+    <!-- Menampilkan skor permainan, awalnya ditetapkan sebagai 0 -->
+    <h2 class="papan-skor">0</h2>
+
+    <!-- Container untuk menampilkan area permainan -->
+    <div class="container">
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+        <div class="tanah">
+            <div class="tikus"></div>
+        </div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript untuk logika permainan -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+ 
